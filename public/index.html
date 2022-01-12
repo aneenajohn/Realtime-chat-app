@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="/socket.io/socket.io.js"></script>
     <title>Pingoo</title>
 </head>
 <body>
-    <h1>Hey, you thr?</h1>
+    <div class="mario-chat">
+        <div class="chat-window">
+            <div class="output"></div>
+        </div>
+        <input type="text" placeholder="User Name" class="user-name">
+        <input type="text" placeholder="Message" class="message">
+        <button class="send-button">Send</button>
+    </div>
+    <script src="./chat.js"></script>
 </body>
 </html>
