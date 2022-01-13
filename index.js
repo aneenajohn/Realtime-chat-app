@@ -17,10 +17,10 @@ const io = socket(server); // socket.io is waiting around here on the server for
 io.on('connection', (socket) => {
     console.log('Socket connection established', socket.id)
 
-    // listen for the message sent by client
+    // listen for the message sent by client1
     // listen for the socket 'chat' and receives the msg from client1 and send that back to all sockets
     // (ie)Back to all users connected on that server via event 'chat'
     socket.on('chat', (data)=> {
-        io.sockets.emit('chat', data)
+        io.sockets.emit('chat', data) // sockets ref to all of the socketes connected
     })
 })
